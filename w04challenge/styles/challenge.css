@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+h1 {
+    color: black;
+}
+h1:hover {
+    color: blueviolet;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
