@@ -20,10 +20,15 @@ nav a:hover {
     background-color: #FCE172;
     color: #134266;
 }
-footer {
+footer a {
     color: #134266;
     text-align: center;
+    text-decoration: none;
 }
-footer:hover {
+footer a:hover {
     color: #78C5D7;
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
 }
