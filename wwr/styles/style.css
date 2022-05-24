@@ -1,41 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Tillana&family=IBM+Plex+Sans+Thai+Looped&display=swap');
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-.button-box {
-    text-align: center;
-}
-main section img {
-    box-sizing: border-box;
-}
-main section {
-    text-align: center;
-}
-#background {
-    height: 725px;
-    background-color: #78C5D7;
-}
+
 body {
     background-color: white;
-    font-family: "IBM Plex Sans Thai Looped", Helvetica, sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
 }
+
+#content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px;
+  text-align: center;
+  color: #134266;
+ margin-bottom: 0;
+ font-family: 'Tillana', sans-serif;
+}
+
+p {
+   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1.25em;
+  padding: 10px;
+  color: #134266; 
+}
+
+
+nav {
+   background-color: #78C5D7;
+  padding: 1em;
+}
+
+nav a {
+    color: #134266;
+    text-decoration: none;
+    text-align: center;
+    padding: .5em 1em;
+  line-height: 1.15em;
+}
+nav li {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1em; 
+}
+nav a:hover {
+    background-color: #FCE172;
+    color: #134266;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 0;
+  list-style: none;
+}
+
 header {
-  background-color:#134266 ;
+   background-color:#134266 ;
   color: white;
+display: grid;
+grid-template-columns: 150px auto;
+align-items: center;
 }
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.banner {
+    width: 100%;
+} 
+
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
-h2 {
-    margin: 0;
+.button-box {
+    text-align: center;
+  margin: 25px;
 }
-h4 {
-    color: #134266;
+
+main, section {
+    text-align: center;
 }
+
+
+main section img {
+    box-sizing: border-box;
+}
+
 .book, .join {
     background-color: #134266;
     color: #FCE172;
@@ -44,16 +105,54 @@ h4 {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
 }
 .book:hover, .join:hover {
     background-color: #FCE172;
     color: #134266;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+
 .msg {
     background-color: #78C5D7;
     color: #134266;
     line-height: 1.5em;
     padding: 35px;
+}
+
+#background {
+    height: auto;
+    background-color: #78C5D7;
+}
+
+.mountains {
+  width: 80%;
+  margin: 15px;
+}
+
+footer {
+    background-color: #78C5D7;
+    color: #134266;
+   display: grid;
+  grid-template-columns: 1fr max-content repeat(6, max-content);
+  align-items: center;
+  justify-content: center;
+  line-height: 1.75em;
+}
+
+.socialmedia {
+  padding: 10px;
+} 
+
+.icons {
+  width: 45px;
+  height: 45px;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#info {
+  font-size: .5em;
 }
 .home-title {
     color: #134266;
@@ -61,65 +160,39 @@ h4 {
     font-size: 2em;
     margin-top: 10px;
 }
+
+
 .msg h2 {
     color: #134266;
-    font-family: Tillana, Helvetica, serif;
+    font-family: 'Tillana', serif;
 }
 .msg p {
     color: #134266;
     font-size: .8em;
     padding-bottom: 15px;
 }
-footer h3 {
-    color: #134266;
-}
-footer h3 a:hover {
-    text-decoration: underline;
-}
-footer a {
-    color: #134266;
-    text-decoration: none;
-}
-footer a:hover {
-    color: #FCE172;
-}
-footer {
-    background-color: #78C5D7;
-    color: #134266;
-    padding: 25px 50px;
-    margin-top: 200px;
-}
-footer .social img {
-    padding-top: 15px;
-}
-.logo {
-    width: 80px;
-}
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-#hero-img {
-    width: 100%;
-}
+
+
+
 #logo_link {
     padding-top: 5px;
 }
 .rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
+    margin: 50px;
 }
 .card-img {
     border: 10px solid #FCE172;
+}
 
-}
-nav a {
-    background-color: #78C5D7;
+footer h3 a {
     color: #134266;
-    text-decoration: none;
-    text-align: center;
-    padding: 35px;
+   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: .75em;
+  padding: 10px;
 }
-nav a:hover {
-    background-color: #FCE172;
-    color: #134266;
+
+footer h3 a:hover {
+    text-decoration: underline;
+  color: #FCE172;
 }
+
