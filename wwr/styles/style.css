@@ -256,13 +256,19 @@ footer {
 footer h3 a {
   color: #134266;
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  font-size: .75em;
+  font-size: 1em;
   padding: 10px;
 }
 
 footer h3 a:hover {
   text-decoration: underline;
   color: #FCE172;
+}
+.social a :hover {
+  transform: scale(1.1);
+}
+.valid-css:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
