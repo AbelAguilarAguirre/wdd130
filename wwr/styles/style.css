@@ -2,6 +2,9 @@
 
 body {
   background-color: white;
+  background-repeat: no-repeat;
+  
+  background-position: center bottom;
 }
 
 #content {
@@ -29,8 +32,14 @@ p {
   padding: 10px;
   color: #134266;
 }
-
-
+form {
+  font-size: 1.5em;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+label{ 
+  background-color: #78c6d7c9;
+  border-radius: 8px;
+}
 nav {
   background-color: #78C5D7;
   padding: 1em;
@@ -87,6 +96,10 @@ img {
 .banner {
   width: 100%;
 }
+.contactus-title{
+  background: #134266d5;
+
+}
 
 #hero {
   display: grid;
@@ -101,12 +114,76 @@ img {
   grid-column: 2/3;
   grid-row: 1/2;
 }
+.ratesmain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#rates-msg h1,
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
   color: white;
 }
+#rates-msg {
+  grid-column: 1/4;
+  grid-row: 2/4;
+}
 
+.maincontainer {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background: #FCE172;
+  border-radius: 20px;
+}
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #FCE172;
+  color: #333;
+  border-radius: 20px;
+}
+.thefrontimg{
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.thefronttitle{
+  z-index: 100;
+  position: absolute;
+  color: white;
+  left: 160px;
+  top: 250px;
+  background: #1342669c;
+  
+}
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.backtxt{
+  padding: 50px 0 50px;
+}
 .button-box {
   text-align: center;
   margin: 25px;
@@ -116,6 +193,7 @@ main,
 section {
   text-align: center;
 }
+
 
 
 main section img {
@@ -285,10 +363,20 @@ footer h3 a:hover {
   #hero {
       margin-top: 0;
   }
-  #hero-msg {
+  #hero-msg,
+  #rates-msg {
       margin-top: 0;
-      
   }
+  .ratesmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  .maincontainer {
+    position: relative;
+    width: 100%;
+    height: 400px;}
+
   #hero-msg h4 {
       display: none;
   }
