@@ -2,63 +2,117 @@
 <html>
 
 <head>
-    <title>KauaiJeeps • Contact Us</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
+  <title>KauaiJeeps • Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <div id="content">
-      
+  <div id="content">
+
     <header>
-      <div class="logo-link"><img class="logo" src="images/logo.png" alt="Logo image"></div>
-        
-    <nav>
-     <a href="index.html">Home</a> 
-     <a href="rates.html">Our Rates</a>  
-     <a href="contactus.html">Contact Us</a>  
-     <a href="site-plan.html">Site Plan</a> 
-   <!--<a href="card.html">My Media Card</a>
+      <a href="index.html" class="logo-link"><img class="logo" src="images/logo.png" alt="Logo image"></a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rates.html">Our Rates</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="site-plan.html">Site Plan</a>
+        <!--<a href="card.html">My Media Card</a>
       <a href="forms.html">Forms</a>-->
-     </nav>
-    </header>  
-  
-  <main>
-<div id="banner">
-   <div id="banner-box">
-     <img id="banner-img" src="images/homebanner.png" alt="banner"></div>
+      </nav>
+    </header>
 
- <section id="banner-msg">
-     <h1 class="home-title">Kauai Jeeps</h1>
-     <h4 class="sub-title">Best Deals in the Islands </h4>
-   
-     <div class="button-box">
-     <a class="join" href="contactus.html">Join Us</a>
-    </div>
- </section>
-    </div>
-    
-  </main>
+    <main>
+      <div id="contactbanner">
+        <div id="contactbanner-box">
+          <img id="banner-img" src="images/blogsnorkle.jpg" alt="banner"></div>
+        <section id="contactbanner-msg">
+          <h1 class="contact-title">Kauai Jeeps</h1>
+          <h4 class="contactsub-title">We Would Love to Hear From You </h4>
+        </section>
+      </div>
 
-  <footer>
-   <p id="info">&copy;2022 KauaiJeeps • Abel Antonio Aguilar Aguirre • WDD130-14</p> 
-  
-    <div class="social">
-    
-      <a href="https://facebook.com" target="_blank">
-        <img src="images/facebook.png" alt="fb icon">
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img src="images/twitter.png" alt="twitter icon">
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="images/instagram.png" alt="instagram icon">
-      </a>
-    </div>
+      <div id="feedback"></div>
+      <section id="contactmain">
+        <h3 class="hourstitle">Hours:</h3>
+        <p class="hours">Mon - Fri: 6am - 11pm <br> Saturday: 6am - 5pm<br> Sunday: CLOSED</p>
+        <h3 class="locationtitle">Our Location:</h3>
+        <p class="location">Kauai Jeeps<br>1234 Weliweli Rd.<br>Koloa, HI 96756</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.8163938324287!2d-159.46544904913347!3d21.903144962656885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfaeda413a94864d0!2zMjHCsDU0JzExLjMiTiAxNTnCsDI3JzQ3LjciVw!5e0!3m2!1sen!2sus!4v1655802361195!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="contactusimg" href="images/blogmuddyjeep.jpg"><img class="contactusimg" src="images/blogmuddyjeep.jpg" alt="Muddy Jeep"></a>
+        <h1 class="contactustitle">Contact Us</h1>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_mail">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </form>
+        <script>
+          // get the feedback div element so we can do something with it.
+          const feedbackElement = document.getElementById('feedback');
+          // get the form so we can read what was entered in it.
+          const formElement = document.forms[0];
+          // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+          formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+              '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+          });
+        </script>
+        <h3 class="telephonetitle">Telephone:</h3>
+        <p class="telephone">Office: (808)123-4567<br>Fax: (808)765-4321</p>
+        <h3 class="emailtitle">Email:</h3>
+        <p class="email">kauaijeepsemail@email.com</p>
 
-  </footer>
-  
+      </section>
+    </main>
+
+    <footer>
+      <p id="info">KauaiJeeps &copy; 2022 - Abel Antonio Ulysses Aguilar Aguirre WDD130-14</p>
+      <p><a class="siteplan" href="site-plan.html">Site Plan</a></p>
+      <p><a class="siteplan" href="contactus.html">Contact Us</a></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="instagram icon">
+        </a>
+      </div>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img class="valid-css" style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+
+    </footer>
+
   </div>
 </body>
+
 </html>

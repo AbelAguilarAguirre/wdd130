@@ -32,14 +32,17 @@ p {
   padding: 10px;
   color: #134266;
 }
+
 form {
   font-size: 1.5em;
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
-label{ 
+
+label {
   background-color: #78c6d7c9;
   border-radius: 8px;
 }
+
 nav {
   background-color: #78C5D7;
   padding: 1em;
@@ -96,7 +99,8 @@ img {
 .banner {
   width: 100%;
 }
-.contactus-title{
+
+.contactus-title {
   background: #134266d5;
 
 }
@@ -105,25 +109,30 @@ img {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
 }
+
 #hero-box,
 #hero-img {
   grid-column: 1/4;
   grid-row: 1/3;
 }
+
 #hero-msg {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.ratesmain{
+
+.ratesmain {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 #rates-msg h1,
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
   color: white;
 }
+
 #rates-msg {
   grid-column: 1/4;
   grid-row: 2/4;
@@ -144,9 +153,11 @@ img {
   background: #FCE172;
   border-radius: 20px;
 }
-.thecard:hover{
+
+.thecard:hover {
   transform: rotateY(180deg);
 }
+
 .thefront {
   position: absolute;
   width: 100%;
@@ -156,21 +167,24 @@ img {
   color: #333;
   border-radius: 20px;
 }
-.thefrontimg{
+
+.thefrontimg {
   border-radius: 20px;
   position: absolute;
   left: 0;
   top: 0;
 }
-.thefronttitle{
+
+.thefronttitle {
   z-index: 100;
   position: absolute;
   color: white;
   left: 160px;
   top: 250px;
   background: #1342669c;
-  
+
 }
+
 .theback {
   position: absolute;
   width: 100%;
@@ -181,9 +195,11 @@ img {
   transform: rotateY(180deg);
   border-radius: 20px;
 }
-.backtxt{
+
+.backtxt {
   padding: 50px 0 50px;
 }
+
 .button-box {
   text-align: center;
   margin: 25px;
@@ -223,6 +239,7 @@ main section img {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
+
 .msg {
   background-color: #134266;
   color: #78C5D7;
@@ -248,23 +265,23 @@ main section img {
   box-shadow: 5px 5px 10px black;
 }
 
- /* To make sure that all text fields have the same font settings
+/* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
-     #feedback {
-      background-color: antiquewhite;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: .5em;
-      /* make this element invisible until we are ready for it */
-      display: none;
-  }
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
 
-  .moveDown {
-      margin-top: 3em;
-  }
-  
+.moveDown {
+  margin-top: 3em;
+}
+
 footer {
   background-color: #78C5D7;
   color: #134266;
@@ -321,14 +338,17 @@ footer {
 .rapids-card {
   margin: 25px;
 }
+
 .rivers-card {
   grid-column: 2/4;
   grid-row: 2/3;
 }
+
 .camping-card {
   grid-column: 5/7;
   grid-row: 2/3;
 }
+
 .rapids-card {
   grid-column: 8/10;
   grid-row: 2/3;
@@ -340,11 +360,14 @@ footer {
   transition: transform .5s;
   box-shadow: 5px 5px 10px black;
 }
+
 .card-img:hover {
   opacity: .6;
   transform: scale(1.1);
 }
-.card-img, .mountains {
+
+.card-img,
+.mountains {
   width: 100%;
 }
 
@@ -359,61 +382,82 @@ footer h3 a:hover {
   text-decoration: underline;
   color: #FCE172;
 }
+
 .social a :hover {
   transform: scale(1.1);
 }
+
 .valid-css:hover {
   transform: scale(1.1);
 }
+
 @media screen and (max-width: 900px) {
-  #hero, .home-grid {
-      display: block;
-      height: auto;
+
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
   }
-  nav, footer {
-      flex-direction: column;
+
+  nav,
+  footer {
+    flex-direction: column;
   }
+
   nav a {
-      display: block;
-      padding: 15px;
+    display: block;
+    padding: 15px;
   }
+
   #hero {
-      margin-top: 0;
+    margin-top: 0;
   }
+
   #hero-msg,
   #rates-msg {
-      margin-top: 0;
+    margin-top: 0;
   }
-  .ratesmain{
+
+  .ratesmain {
     display: grid;
     grid-template-columns: 1fr;
     width: auto;
   }
+
   .maincontainer {
     position: relative;
     width: 100%;
-    height: 400px;}
+    height: 400px;
+  }
 
   #hero-msg h4 {
-      display: none;
+    display: none;
   }
+
   .home-title {
-      font-size: 25px;
-      color: #6f7364;
+    font-size: 25px;
+    color: #6f7364;
   }
-  .rivers-card, .camping-card, .rapids-card { 
-      margin: 50px auto;
-      width: 60%;
+
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
   }
+
   #background {
-      display: none;
+    display: none;
   }
-  .mountains, .msg {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
+
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
+
   footer {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 }
